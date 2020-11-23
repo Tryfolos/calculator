@@ -26,6 +26,9 @@ while True:
 
 #Code for adding numbers. Choice 1.
 	if choice == "1":
+		print("ADDITION")
+		time.sleep(2)
+		os.system("cls")
 		while True:
 			print("Skriv '=' om du är klar")
 			print(f"Här är alla talen du lagt till: {list_of_numbers}")
@@ -45,23 +48,26 @@ while True:
 				list_of_numbers = []
 				number = 0
 				break
-
 			
-		
 
 #Code for subtracting numbers. Choice 2.
 	if choice == "2":
+		print("SUBTRAKTION")
+		time.sleep(2)
+		os.system("cls")
 		while True:
 			print("Skriv '=' om du är klar")
 			print(f"Här är alla talen du lagt till: {list_of_numbers}")
 			thing = input(f"Skriv in tal nummer {number_of_numbers}: ")
+			thing = thing.replace(thing,f"-{thing}")
 			os.system("cls")
-			if not thing == "=":
+			if not thing == "-=":
 				list_of_numbers.append(thing)
 				number_of_numbers += 1
 				os.system("cls")
 			else:
 				for i in list_of_numbers:
+					i = i.replace("-", "")
 					number = number - int(i)
 				print(f"Differensen av talen är {number}")
 				time.sleep(2)
@@ -74,6 +80,9 @@ while True:
 
 #Code for multiplying numbers. Choice 3.
 	if choice == "3":
+		print("MULTIPLIKATION")
+		time.sleep(2)
+		os.system("cls")
 		number = 1
 		while True:
 			print("Skriv '=' om du är klar")
