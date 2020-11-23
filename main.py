@@ -24,10 +24,20 @@ while True:
 	os.system("cls")
 
 
+#Each of the "while loops" below here contains an input function that takes the number you put in and adds it to a list.
+#It will keep adding numbers to the list as you enter them every turn of the loop but as soon as you enter "=" -
+#a "for loop" that is inside the "while loop" will start.
+#The for loop goes through every number of the list and adds them or subtracts them or multiplies them with each other - 
+#depending on the mode you've chosen in the menu. It then spits out the reult from all the numbers in the list. 
+#After this point it will wait 2 seconds and thereafter return to the menu and start all over again.
+#I hope this comment was helpful to understand the code below. Either way, you are welcome.
+
+
+
 #Code for adding numbers. Choice 1.
 	if choice == "1":
 		print("ADDITION")
-		time.sleep(2)
+		time.sleep(1.5)
 		os.system("cls")
 		while True:
 			print("Skriv '=' om du är klar")
@@ -53,7 +63,7 @@ while True:
 #Code for subtracting numbers. Choice 2.
 	if choice == "2":
 		print("SUBTRAKTION")
-		time.sleep(2)
+		time.sleep(1.5)
 		os.system("cls")
 		while True:
 			print("Skriv '=' om du är klar")
@@ -69,8 +79,8 @@ while True:
 				for i in list_of_numbers:
 					i = i.replace("-", "")
 					number = number - int(i)
-				print(f"Differensen av talen är {number}")
-				time.sleep(2)
+				print(f"Den totala differensen av talen är {number}")
+				time.sleep(2.5)
 				os.system("cls")
 				number_of_numbers = 1
 				list_of_numbers = []
@@ -81,7 +91,7 @@ while True:
 #Code for multiplying numbers. Choice 3.
 	if choice == "3":
 		print("MULTIPLIKATION")
-		time.sleep(2)
+		time.sleep(1.5)
 		os.system("cls")
 		number = 1
 		while True:
