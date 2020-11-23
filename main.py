@@ -5,13 +5,17 @@ import os
 import time
 
 
+#Variables
+number_of_numbers = 0
+
+
 #Start of loop.
 while True:
 	print("[1] Räkna med addition")
 	print("[2] Räkna med subtraktion")
 	print("[3] Räkna med multiplikation")
-	print("[4] Avsluta")
-	print("[5] Avsluta Annorlunda")
+	print("[4] Räkna med divition")
+	print("[5] Avsluta")
 	choice = input("")
 	os.system("cls")
 
@@ -21,7 +25,7 @@ while True:
 		os.system("cls")
 		tal2 = input("Skriv in tal 2: ")
 		os.system("cls")
-		print(f"Summan av {tal1} och {tal2} är {int(tal1) + int(tal2)}")
+		print(f"Summan av {tal1} och {tal2} är {float(tal1) + float(tal2)}")
 		time.sleep(2)
 		os.system("cls")
 
@@ -32,7 +36,7 @@ while True:
 		os.system("cls")
 		tal2 = input("Skriv in tal 2: ")
 		os.system("cls")
-		print(f"Differencen mellan {tal1} och {tal2} är {int(tal1) - int(tal2)}")
+		print(f"Differencen mellan {tal1} och {tal2} är {float(tal1) - float(tal2)}")
 		time.sleep(2)
 		os.system("cls")
 
@@ -43,21 +47,24 @@ while True:
 		os.system("cls")
 		tal2 = input("Skriv in tal 2: ")
 		os.system("cls")
-		print(f"Produkten av {tal1} och {tal2} är {int(tal1) * int(tal2)}")
+		print(f"Produkten av {tal1} och {tal2} är {float(tal1) * float(tal2)}")
 		time.sleep(2)
 		os.system("cls")
 
 
 
-#Code for exiting the program. This code is active when choice 4 or 5 is chosen.
+#Code for multiplying numbers. Choice 3.
 	if choice == "4":
-		print("Avslutar...")
+		tal1 = input("Skriv in tal 1: ")
+		os.system("cls")
+		tal2 = input("Skriv in tal 2: ")
+		os.system("cls")
+		print(f"Kvoten av {tal1} och {tal2} är {float(tal1) / float(tal2)}")
 		time.sleep(2)
 		os.system("cls")
-		break
 
 	if choice == "5":
-		print("AVSLUTAR!!!")
+		print("Avslutar...")
 		time.sleep(2)
 		os.system("cls")
 		break
