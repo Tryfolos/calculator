@@ -21,8 +21,31 @@ while True:
 		os.system("cls")
 		tal2 = input("Skriv in tal 2: ")
 		os.system("cls")
-		print(f"Summan för tal 1 och tal 2 är {int(tal1) + int(tal2)}")
+		print(f"Summan av {tal1} och {tal2} är {int(tal1) + int(tal2)}")
 		time.sleep(2)
+		os.system("cls")
+
+
+#Code for subtracting numbers. Choice 2.
+	if choice == "2":
+		tal1 = input("Skriv in tal 1: ")
+		os.system("cls")
+		tal2 = input("Skriv in tal 2: ")
+		os.system("cls")
+		print(f"Differencen mellan {tal1} och {tal2} är {int(tal1) - int(tal2)}")
+		time.sleep(2)
+		os.system("cls")
+
+
+#Code for multiplying numbers. Choice 3.
+	if choice == "3":
+		tal1 = input("Skriv in tal 1: ")
+		os.system("cls")
+		tal2 = input("Skriv in tal 2: ")
+		os.system("cls")
+		print(f"Produkten av {tal1} och {tal2} är {int(tal1) * int(tal2)}")
+		time.sleep(2)
+		os.system("cls")
 
 
 
